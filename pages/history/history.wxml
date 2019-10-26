@@ -1,0 +1,19 @@
+<!--pages/history/history.wxml-->
+<view class='titleRes'><text class='tip'>取回记录：</text></view>
+<!-- <view class='imgContainer' hidden='{{haveInfo}}'>
+  <image src='/imgs/null.png' class='img'></image>
+  <view class='text'>
+    <text>暂无记录</text>
+  </view>
+</view> -->
+
+<view class='list' hidden='{{notHaveInfo}}' bindtap='detail' wx:for="{{result}}" wx:key="{{index}}" data-describe='{{item.describe}}'
+data-locate='{{item.locate}}' data-time='{{item.time}}' data-img='{{item.img}}' data-sn='{{item.sn}}' data-backWay='{{item.backWay}}'>
+  <image src='{{item.img}}' class='imgList'></image>
+  <view class='textList'>
+    <text class='text_style'>{{item.describe}}</text>
+    <text class='text_style'>地点：{{item.locate}}</text>
+    <text class='text_style'>时间：{{item.time}}</text>
+    <van-button class='btn' plain hairline type="primary" size='mini'>查看</van-button>
+  </view>
+</view>

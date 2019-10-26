@@ -1,0 +1,9 @@
+/* pages/feedback/feedback.wxss */
+.tip{
+  width: 650rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  font-size: 13px;
+  color:black;
+
+}

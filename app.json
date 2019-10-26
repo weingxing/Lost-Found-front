@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/submit/submit",
+    "pages/search/search",
+    "pages/share/share",
+    "pages/history/history",
+    "pages/feedback/feedback",
+    "pages/about/about",
+    "pages/help/help",
+    "pages/detail/detail",
+    "pages/singup/singup",
+    "pages/historyDetail/historyDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3185ff",
+    "navigationBarTitleText": "青科寻物",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#3185ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home_selected.png"
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "text": "拾物",
+        "iconPath": "imgs/found.png",
+        "selectedIconPath": "imgs/found_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "imgs/mine.png",
+        "selectedIconPath": "imgs/mine_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

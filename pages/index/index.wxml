@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<image src='/imgs/logo1.png' class='logo'></image>
+
+<view>
+  <view class='input'>
+    <van-search value="{{ value }}" placeholder="请输入关键词，如：雨伞" bind:change="getKey"/>
+  </view>
+
+  <view class="search">
+    <van-button round type="primary" size="large" bind:click="search">搜 索</van-button>
+  </view>
+
+  <view class="copyright">
+    <van-tag size="medium" round color="#cccccc" plain>计算机协会提供技术支持</van-tag>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+
+.logo{
+  height: 300rpx;
+  width: 755rpx;
+}
+
+.icon {
+  width: 240rpx;
+  height: 240rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.form {
+  margin-top: 50rpx;
+  margin-bottom: 5rpx;
+  font-size: 13px;
+  color: black;
+  margin-left: 30rpx;
+}
+
+.title{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

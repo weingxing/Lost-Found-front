@@ -1,0 +1,69 @@
+/* pages/history/history.wxss */
+.imgContainer{
+ display:flex;
+ flex-direction: column;
+ margin-top: 100rpx;
+ height: 100%;
+ align-items:center;
+}
+
+.text{
+  margin-top: 30rpx;
+  font-size: 14px;
+  color:cadetblue;
+  text-align: center;
+}
+
+.img{ 
+  width:400rpx;
+  height:400rpx;
+}
+.titleRes{
+  background-color: #3185ff;
+}
+
+.tip{
+  font-weight: 700;
+  font-size: 13.5px;
+  color: white;
+  margin-left: 15rpx;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx;
+  height: 240rpx;
+  border-width: 4rpx 4rpx 0 0 0 0;
+  border-color: #3185ff;
+  border-style: solid;
+}
+
+.textStyle{
+  margin-top: 15rpx;
+  font-size: 14px;
+  color: gray;
+  line-height: 40rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+  width: 350rpx;
+}
+
+.imgList{
+  width: 300rpx;
+  height: 240rpx;
+}
+
+.textList{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.btn{
+  margin-left: 240rpx;
+  margin-top: 10rpx;
+}

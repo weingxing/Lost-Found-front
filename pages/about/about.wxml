@@ -1,0 +1,21 @@
+<!--pages/about/about.wxml-->
+<view class='content'>
+  <image src='/imgs/icon.png' class='icon'></image>
+  <view class="version">
+    <text>青科寻物</text>
+    <van-tag size="mini" round color="#3185ff" plain>V1.0</van-tag>
+  </view>
+
+  <view class='developer'>
+   <van-tag size="normal" round color="#3185ff" plain>开发人员名单</van-tag>
+  </view>
+  <view class='developer'> 
+    <image src='/imgs/pic2.jpg' class='developerLeft'></image>
+    <image src='/imgs/pic1.jpg' class='developerRight'></image>
+  </view>
+  <view>
+    <text class='developerNameLeft'>皎平渡</text>
+    <text class='developerNameRight'>null</text>
+  </view>
+</view>
+

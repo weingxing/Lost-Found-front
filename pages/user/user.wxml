@@ -1,0 +1,27 @@
+<!--pages/user/user.wxml-->
+<image src='/imgs/logo1.png' class='logo'></image>
+
+<view class="my">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登 录</button>
+    <block wx:else>
+      <open-data bindlongtap="haha" type="userAvatarUrl" class="avatar"></open-data>
+      <open-data type="userNickName"></open-data>
+    </block>
+  </view>
+</view>
+
+<view class="menu">
+  <van-cell-group>  
+    <van-cell is-link icon="notes-o" title="用户指南" bind:click="help"/>
+    <van-cell is-link icon="share" title="分享程序" bind:click="share"/>
+    <van-cell is-link icon="orders-o" title="我的记录" bind:click="history"/>
+
+    <view hidden='{{status}}'>
+      <van-cell is-link icon="comment-o" title="意见反馈" bind:click="feedback"/>
+    </view>
+
+    <van-cell is-link icon="warning-o" title="关于我们" bind:click="about"/>
+  </van-cell-group>
+</view>
+

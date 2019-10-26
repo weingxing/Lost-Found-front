@@ -1,0 +1,40 @@
+/* pages/detail/detail.wxss */
+.img{
+  background-color: black;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail{
+  margin-top: 30rpx;
+  margin-left: 10px;
+  font-size: 13px;
+  color: gray;
+}
+
+.showBackWay{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.id{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.BackWay{
+  margin-top: 30rpx;
+}
+
+.getIt{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+/* pages/about/about.wxss */
+
+.version {
+  font-size: 14px;
+  text-align:center;
+  color: #3185ff;
+}
+.developer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  align-items: center;
+}
+
+.developerLeft{
+  width: 130rpx;
+  height: 130rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.developerRight{
+  width: 130rpx;
+  height: 130rpx;
+  margin: 20rpx;
+  margin-left: 130rpx;
+  border-radius: 50%;
+}
+.developerNameRight{
+  position:relative;
+  left:115rpx;
+  font-size: 13px;
+  top:5rpx;  
+}
+.developerNameLeft{
+  position:relative;
+  right: 115rpx;
+  font-size: 13px;
+  top:5rpx;  
+}

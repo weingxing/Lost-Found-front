@@ -1,0 +1,18 @@
+/**index.wxss**/
+.input{
+  margin-top: 100rpx;
+  align-items: center;
+}
+
+.search { 
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 5rpx;
+}
+
+.copyright {
+  margin-top: 500rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  text-align:center;
+}

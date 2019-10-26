@@ -1,0 +1,82 @@
+/* pages/submit/submit.wxss */
+
+.imgGroup{
+  display: flex;
+  flex-direction: row;
+}
+.delete{
+  align-items: center;
+  margin-left: 10rpx;
+  margin-top: 100rpx;
+}
+
+.upload {
+  margin-left: 30rpx;
+  height: 250rpx;
+  width: 300rpx;
+}
+.delete {
+  margin-left: 30rpx;
+  height: 100rpx;
+  width: 100rpx;
+  align-content: center;
+}
+.submit { 
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 20rpx;
+}
+
+.image {
+  width: 760rpx;
+  height: 300rpx;
+}
+
+.title{
+  background-color: #3185ff;
+}
+.tip{
+  font-weight: 700;
+  font-size: 13.5px;
+  color: white;
+  margin-left: 15rpx;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx;
+  height: 240rpx;
+  border-width: 4rpx 4rpx 0 0 0 0;
+  border-color: #3185ff;
+  border-style: solid;
+}
+
+.textStyle{
+  margin-top: 15rpx;
+  font-size: 14px;
+  color: gray;
+  line-height: 40rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+  width: 350rpx;
+}
+
+.imgList{
+  width: 300rpx;
+  height: 240rpx;
+}
+
+.textList{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.btn{
+  margin-left: 240rpx;
+  margin-top: 10rpx;
+}

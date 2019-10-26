@@ -1,0 +1,9 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="content">
+  <image src='/imgs/icon.png' class='icon'></image>
+  <van-tag color="#3185ff" size="large" plain>意见反馈</van-tag>
+</view>
+<view class='content'>
+  <text class='tip' space="ensp">为保证反馈信息能得到及时处理，请加入QQ群后私聊管理，点击下方按钮可复制QQ群号</text>
+  <van-button round type="primary" size="normal" bind:click="copy" plain>QQ：1020113336</van-button>
+</view>

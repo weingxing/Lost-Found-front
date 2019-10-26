@@ -1,0 +1,38 @@
+<!--pages/detail/detail.wxml-->
+<view class='img'>
+  <image mode='aspectFit' bindtap='previewImg' src='{{img}}'></image>
+</view>
+
+<view class='detail'>
+  <text>基础信息</text>
+</view>
+
+<van-cell-group>
+  <van-field value="{{time}}" label="拾取时间" type="textarea" disabled autosize/>
+  <van-field value="{{locate}}" label="拾取地点" type="textarea" disabled autosize/>
+  <van-field value="{{describe}}" label="具体描述" type="textarea" disabled autosize/>
+</van-cell-group>
+<view  hidden='{{status}}'>
+  <view class='detail'>
+   <text>取回方式</text>
+  </view>
+
+  <view class='showBackWay' hidden='{{hasClicked}}'>
+    <van-button round type="primary" size="normal" bind:click="showBackWay" plain>查看取回方式      </van-button>
+  </view>
+
+    <view hidden='{{notClicked}}'>
+
+      <view class='backWay' bindtap='copyBackWay'>
+        <van-cell-group>
+         <van-field value="{{backWay}}" placeholder="找回方式" disabled/>
+       </van-cell-group>
+      </view>
+
+    <view class='getIt'>
+    <van-button round type="primary" bind:click='confirm'>我要取回</van-button>
+    <van-dialog id="van-dialog" />
+    </view>
+
+  </view>
+</view>

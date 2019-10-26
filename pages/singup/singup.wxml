@@ -1,0 +1,15 @@
+<!--pages/singup/singup.wxml-->
+<image src='/imgs/logo1.png' class='logo'></image>
+<view class='title'><van-tag plain type="success" size='large'>学号绑定</van-tag></view>
+<view class='input'>
+  <van-cell-group>
+    <van-field bind:change="getID" value="{{ message }}" 
+    label="学号" type="textarea" placeholder="请输入学号"
+    autosize required/>
+  </van-cell-group>
+  <text class='tip'>为保证后续正常使用，请准确输入学号，输入后不可更改</text>
+</view>
+
+<view class='sure'>
+  <van-button round type="primary" size="normal" bind:click="sure">确定</van-button>
+</view>

@@ -1,0 +1,61 @@
+<!--pages/submit/submit.wxml-->
+<view hidden='{{notStatus}}'>
+  <view class='title'><text class='tip'>最近拾物：</text></view>
+  <view class='list' bindtap='detail' wx:for="{{fktc}}" wx:key="{{index}}" data-describe='{{item.describe}}'
+data-locate='{{item.locate}}' data-time='{{item.time}}' data-img='{{item.img}}' data-id='{{item.sn}}'>
+    <image src='{{item.img}}' class='imgList'></image>
+    <view class='textList'>
+      <text class='textStyle'>{{item.describe}}</text>
+      <text class='textStyle'>地点：{{item.locate}}</text>
+      <text class='textStyle'>时间：{{item.time}}</text>
+      <van-button class='btn' plain hairline type="primary" size='mini'>查看</van-button>
+    </view>
+  </view>
+</view>
+
+
+<view hidden='{{status}}'>
+  <image class='logo' src='/imgs/logo1.png'></image>
+  <view>
+
+    <view class="form"> <text>基本信息</text></view>
+
+    <van-cell-group>
+      <van-field bind:change="getLocate" value="{{ message }}" 
+    label="拾取地点" type="textarea" placeholder="如图书馆二楼"
+    autosize required/>
+      <van-field bind:change="getTime" value="{{ message }}" 
+    label="拾取时间" type="textarea" placeholder="如1月1日上午"
+    autosize required/>
+     <van-field bind:change="getBackWay" value="{{ message }}" 
+    label="找回方式" placeholder="你的联系方式或物品存放地点"
+    autosize required/>
+      <van-field bind:change="getLostInfo" value="{{ message }}" 
+    label="失主信息" type="textarea" placeholder="如一卡通上的名字（选填）"
+    autosize />
+
+    <view class="form"> <text>详细信息</text></view>
+
+    <van-field bind:change="getDescribe" value="{{ message }}" 
+    label="详细描述"  placeholder="请描述物品名称与详细特征"
+    autosize required/>
+
+    <view class="form">
+     <text>上传图片</text>
+    </view>
+
+      <view class='imgGroup'>
+        <image bindtap="upload" class="upload" src="{{uploadIcon}}" mode="cover"></image>
+
+        <view class='delete' hidden='{{hiddenDel}}'>
+          <van-button round type="danger" size="mini" bind:click="deleteImg">删除</van-button>
+        </view>
+      </view>
+    </van-cell-group>
+
+    <view class="submit">
+      <van-button round type="primary" size="large" bind:click="submit">一键提交</van-button>
+    </view> 
+
+  </view>
+</view>

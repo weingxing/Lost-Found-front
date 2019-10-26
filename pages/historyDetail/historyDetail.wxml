@@ -1,0 +1,25 @@
+<!--pages/historyDetail/historyDetail.wxml-->
+<view class='img'>
+  <image mode='aspectFit' bindtap='previewImg' src='{{img}}'></image>
+</view>
+
+<view class='detail'>
+  <text>基础信息</text>
+</view>
+
+<van-cell-group>
+  <van-field value="{{time}}" label="拾取时间" type="textarea" disabled autosize/>
+  <van-field value="{{locate}}" label="拾取地点" type="textarea" disabled autosize/>
+  <van-field value="{{describe}}" label="具体描述" type="textarea" disabled autosize/>
+</van-cell-group>
+<view  hidden='{{status}}'>
+  <view class='detail'>
+   <text>取回方式</text>
+  </view>
+
+  <view class='backWay'>
+    <van-cell-group>
+      <van-field value="{{backWay}}" placeholder="找回方式" disabled/>
+    </van-cell-group>
+  </view>
+</view>

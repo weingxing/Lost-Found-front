@@ -1,0 +1,17 @@
+<!--pages/help/help.wxml-->
+<view class='content'>
+  <image src='/imgs/icon.png' class='icon'></image>
+  <van-tag color="#3185ff" size="large" plain>用户指南</van-tag>
+</view>
+
+
+<van-collapse value="{{ activeNames }}" class='question' bind:change="onChange" accordion>
+  <van-collapse-item icon="question-o" title="怎样使用这个程序？" name="1">
+  详细说明敬请期待~
+  </van-collapse-item>
+
+  <van-collapse-item icon="question-o" title="我丢了东西，可以发布寻物吗?" name="2">
+  当前版本还不支持，计划后续添加，敬请期待...
+  </van-collapse-item>
+</van-collapse>
+
