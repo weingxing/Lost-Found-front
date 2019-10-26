@@ -1,4 +1,4 @@
-# Lost-Found-front
+# Lost-Found-frontend
 校园寻物系统前端（微信小程序）
 
 # 部署方法
